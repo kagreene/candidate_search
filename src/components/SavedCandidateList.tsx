@@ -14,16 +14,18 @@ interface SavedCandidateListProps {
 
 const SavedCandidatesList = ({ savedCandidates, removeCandidate }: SavedCandidateListProps) => {
     return (
+        <>
         <div>
             {savedCandidates.map((candidate) => (
                 <CandidateCard
                     key={candidate.name}
                     currentCandidate={candidate}
                     removeCandidate={removeCandidate}
-                    currentlyOnSavedList={true}
+                    savedCandidate={true}
                 />
             ))}
         </div>
+        </>
     );
 }
 export default SavedCandidatesList; 
