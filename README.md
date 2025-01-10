@@ -31,3 +31,7 @@ export default {
 
 ---
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+To Do:
+-fix issue on candidate card component
+-finish work on candidate search file
