@@ -46,19 +46,19 @@ const rejectCandidate = async () => {
     event.preventDefault();
     const userSearch = await searchGithubUser(user);
     setCurrentCandidate(userSearch);
-  }
+  };
   //When are we supposed to use the search by candidate username function?
   //The readme does not mention searching by username
   
 
-  return 
+  return (
   <>
   <h1>CandidateSearch</h1>;
   <CandidateCard
   currentCandidate={currentCandidate}
   saveCandidate={saveCandidate}
   removeCandidate={rejectCandidate}/>
-  </>
+  </>);
 };
 
 export default CandidateSearch;
