@@ -6,7 +6,7 @@ interface SavedCandidateListProps {
     savedCandidates: Candidate[];
     removeCandidate:
     | ((
-        e: React.MouseEvent<SVGSVGElement, MouseEvent>,
+        e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
         currentlyOnSavedList: boolean | null | undefined,
         name: string | null
     ) => void) | null;
