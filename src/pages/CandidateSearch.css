@@ -1,0 +1,147 @@
+.candidate-search-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .page-header {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .candidate-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .candidate-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    color: #333;
+  }
+  
+  .candidate-avatar {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .candidate-details h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .candidate-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .save-button,
+  .reject-button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .save-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .reject-button {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  .reject-button:hover {
+    background-color: #cc0000;
+  }
+  .candidate-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: left;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .candidate-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .candidate-details {
+    width: 100%;
+  }
+  
+  .candidate-details p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .candidate-details p strong {
+    font-weight: bold;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .save-button,
+  .reject-button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .save-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .reject-button {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  .reject-button:hover {
+    background-color: #cc0000;
+  }
+  
