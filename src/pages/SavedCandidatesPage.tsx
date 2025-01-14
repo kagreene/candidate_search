@@ -37,14 +37,18 @@ useEffect(() => {
     <>
       <h1 className='pageHeader'>Potential Candidates</h1>
       {/*Conditional rendering to show message if there are no saved candidates */}
-      {(!savedCandidates?.length || savedCandidates?.length === 0) ? 
-       (<h1 style={{ margin: '16px 0' }}>No candidates have been accepted.</h1>)
-      : (
-        <SavedCandidatesList 
-          savedCandidates={savedCandidates}
-          removeCandidate={removeCandidate}
-    />
-      )}
+      {savedCandidates.length === 0 ? (
+  <div className="no-candidates">
+    <p>No candidates have been saved yet.</p>
+    <p>Search for candidates and save them to view here.</p>
+  </div>
+) : (
+  <SavedCandidatesList
+    savedCandidates={savedCandidates}
+    removeCandidate={removeCandidate}
+  />
+)}
+
     </>
   );
 }

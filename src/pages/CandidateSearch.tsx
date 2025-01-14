@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { searchGithub} from '../api/API';
 import CandidateCard from '../components/CandidateCard';
 import type Candidate from '../interfaces/Candidate.interface';
+import './CandidateSearch.css';
 
 
 const CandidateSearch = () => {
@@ -10,10 +11,11 @@ const CandidateSearch = () => {
     name: '',
     username: '',
     location: '',
-    avatar: '',
+    avatar_url: '',
     email: '',
     html_url: '',
     company: '',
+    bio: '',
   }
   );
   //const [searchTerm, setSearchTerm] = useState<string>('');
@@ -49,10 +51,11 @@ const rejectCandidate = async () => {
         name: randomUser.name || randomUser.login,
         username: randomUser.login,
         location: randomUser.location || 'N/A',
-        avatar: randomUser.avatar_url,
+        avatar_url: randomUser.avatar_url,
         email: randomUser.email || 'N/A',
         html_url: randomUser.html_url,
         company: randomUser.company || 'N/A',
+        bio: randomUser.bio || 'N/A',
       };
       setCurrentCandidate(mappedUser);
     } catch (error) {
@@ -69,14 +72,19 @@ const rejectCandidate = async () => {
   //The readme does not mention searching by username
   
 
+
   return (
-  <>
-  <h1>Candidate Search</h1>;
-  <CandidateCard
-  currentCandidate={currentCandidate}
-  saveCandidate={saveCandidate}
-  removeCandidate={rejectCandidate}/>
-  </>);
+    <div className="candidate-search-container">
+      <h1 className="page-header">Candidate Search</h1>
+      <div className="candidate-card-wrapper">
+        <CandidateCard
+          currentCandidate={currentCandidate}
+          saveCandidate={saveCandidate}
+          removeCandidate={rejectCandidate}
+        />
+      </div>
+    </div>
+  );
 };
 
 export default CandidateSearch;
